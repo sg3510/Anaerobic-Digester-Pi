@@ -33,5 +33,6 @@ sudo apt-key add rabbitmq-signing-key-public.asc
 # File no longer needed so we can delete
 rm rabbitmq-signing-key-public.asc
 sudo apt-get update
+# Install rabbitmq with all its needed dependencies
 sudo apt-get install rabbitmq-server
 ```
