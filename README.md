@@ -53,5 +53,5 @@ and get the latest version of raspbian.
 
 The official guide however doesn't list the best way to copy the image to the SD card (speedwise), to improve times 10x use this command instead" 
 ```
-sudo dd if=[raspbian image file].img of=/dev/rdisk#[replace # with correct number] bs=1m
+sudo dd if=[raspbian image file].img of=/dev/rdisk# bs=1m
 ```
