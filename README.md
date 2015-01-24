@@ -43,3 +43,15 @@ sudo rabbitmqctl set_user_tags anaeropi administrator
 sudo rabbitmqctl set_permissions -p / anaeropi “.*” “.*” “.*”
 ```
 This creates a user with name ```anaeropi``` and password ```D1g3sting!``` capable of identifying itself to the messaging system.
+
+## SD Card setup
+To setup an SD card for the pi we just head to
+
+http://www.raspberrypi.org/downloads/
+
+and get the latest version of raspbian.
+
+The official guide however doesn't list the best way to copy the image to the SD card (speedwise), to improve times 10x use this command instead" 
+```
+sudo dd if=[raspbian image file].img of=/dev/rdisk#[replace # with correct number] bs=1m
+```
