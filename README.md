@@ -23,4 +23,4 @@ We have opted to use RabbitMQ as messaging service to get all Pis to talk togeth
 ```bash
 sudo nano /etc/apt/sources.list
 ```
-Once inside the nano editor, add ```deb http://www.rabbitmq.com/debian/ testing main``` as a seperate line
+Once inside the nano editor, add ```deb http://www.rabbitmq.com/debian/ testing main``` as a seperate line. Ctrl+X can be used to exit (press Y to confirm and save changes).
