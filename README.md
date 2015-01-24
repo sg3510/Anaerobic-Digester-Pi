@@ -42,3 +42,4 @@ sudo rabbitmqctl add_user anaeropi D1g3sting!
 sudo rabbitmqctl set_user_tags anaeropi administrator
 sudo rabbitmqctl set_permissions -p / anaeropi “.*” “.*” “.*”
 ```
+This creates a user with name ```anaeropi``` and password ```D1g3sting!``` capable of identifying itself to the messaging system.
