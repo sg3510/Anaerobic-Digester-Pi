@@ -27,7 +27,7 @@ Once inside the nano editor, add ```deb http://www.rabbitmq.com/debian/ testing 
 
 Then install the key and install RabbitMQ
 
-```
+```bash
 sudo wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
 sudo apt-key add rabbitmq-signing-key-public.asc
 # File no longer needed so we can delete
