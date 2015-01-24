@@ -24,3 +24,14 @@ We have opted to use RabbitMQ as messaging service to get all Pis to talk togeth
 sudo nano /etc/apt/sources.list
 ```
 Once inside the nano editor, add ```deb http://www.rabbitmq.com/debian/ testing main``` as a seperate line. Ctrl+X can be used to exit (press Y to confirm and save changes).
+
+Then install the key and install RabbitMQ
+
+```
+sudo wget http://www.rabbitmq.com/rabbitmq-signing-key-public.asc
+sudo apt-key add rabbitmq-signing-key-public.asc
+# File no longer needed so we can delete
+rm rabbitmq-signing-key-public.asc
+sudo apt-get update
+sudo apt-get install rabbitmq-server
+```
