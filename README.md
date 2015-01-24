@@ -35,4 +35,10 @@ rm rabbitmq-signing-key-public.asc
 sudo apt-get update
 # Install rabbitmq with all its needed dependencies
 sudo apt-get install rabbitmq-server
+# For debug purposes we enable the web plugin
+sudo rabbitmq-plugins enable rabbitmq_management
+# Create a user that can access rabbitmq
+sudo rabbitmqctl add_user anaeropi D1g3sting!
+sudo rabbitmqctl set_user_tags anaeropi administrator
+sudo rabbitmqctl set_permissions -p / anaeropi “.*” “.*” “.*”
 ```
