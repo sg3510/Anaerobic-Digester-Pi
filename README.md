@@ -7,7 +7,7 @@ Install virtualenv
 ```bash
 # Update Packages and install python
 sudo apt-get update
-sudo apt-get install python-dev
+sudo apt-get install -y python-dev
 # Get the pip package manager
 wget https://raw.github.com/pypa/pip/master/contrib/get-pip.py
 sudo python get-pip.py
