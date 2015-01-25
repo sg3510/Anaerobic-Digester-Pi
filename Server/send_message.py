@@ -2,7 +2,7 @@
 import pika
 
 credentials = pika.PlainCredentials('anaeropi', 'D1g3sting!')
-parameters = pika.ConnectionParameters('192.168.1.122', 5672, '/', credentials)
+parameters = pika.ConnectionParameters('localhost', 5672, '/', credentials)
 connection = pika.BlockingConnection(parameters)
 
 channel = connection.channel()
