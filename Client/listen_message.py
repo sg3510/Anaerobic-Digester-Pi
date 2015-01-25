@@ -17,7 +17,7 @@ def callback(ch, method, properties, body):
     print " [x] Received %r" % (body,)
 
 channel.basic_consume(callback,
-                      queue='hello',
+                      queue='adigester',
                       no_ack=True)
 
 channel.start_consuming()

@@ -10,7 +10,7 @@ channel.queue_declare(queue='adigester')
 
 message = raw_input("What do you want to tell the other Pis?")
 channel.basic_publish(exchange='',
-                      routing_key='hello',
+                      routing_key='adigester',
                       body=message)
 print " [x] Sent '%s'" % message
 connection.close()
