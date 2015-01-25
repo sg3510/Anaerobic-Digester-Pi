@@ -18,6 +18,12 @@ cd ~/venv
 virtualenv anaeropi
 ```
 
+To setup git, first follow [this guide](https://developer.github.com/guides/managing-deploy-keys/#deploy-keys) to setup a deploy key
+
+```bash
+git pull
+```
+
 ### Server/Master Pi Config
 We have opted to use RabbitMQ as messaging service to get all Pis to talk together. For this we need to install it by doing:
 ```bash
